@@ -1,0 +1,48 @@
+{
+  "apiVersion": 2,
+  "name": "create-block/gutenberg-list-popin",
+  "category": "gutenberg",
+  "icon": "admin-post",
+  "attributes": {
+	  "title": {
+		"type": "string",
+		"selector": ".list-article-title"
+	  },
+	  "category": {
+		"type": "string",
+		"selector": ".list-article-category",
+		"default": ""
+	  },
+	  "listArticle": {
+		"type": "array",
+		"selector": ".list-article",
+		"default": []
+	  },
+	  "btnRandom": {
+		"type": "boolean",
+		"default": false
+	  },
+		"image": {
+			"type": "object",
+			"selector": ".image",
+			"default": {
+				"url": ""
+			}
+		},
+	  "isVideo": {
+		"type": "boolean",
+		"default": false
+	  },
+		"urlVideo": {
+			"type": "string",
+		"selector": ".url-video"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gutenberg-list-popin",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
